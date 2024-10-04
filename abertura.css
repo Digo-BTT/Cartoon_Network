@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+
+header {
+    height: 98vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header,
+.mãe,
+.logo,
+.meio,
+.direita {
+    display: flex
+}
+
+.mãe {
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-image: url(../imgs/gif4.gif);
+    background-repeat: no-reapeat;
+    background-size: cover;
+}
+
+.logo {
+    justify-content: center;
+    height: 10px;
+    flex: 25%;
+}
+
+.logo img {
+    height: 70px;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    margin-left: 38px;
+}
+
+.meio {
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    flex: 50%;
+    margin-top: 25px;
+    gap: 40px;
+}
+
+.meio p {
+    color: white;
+    font-size: 22px;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    position: relative;
+    display: inline-block;
+}
+
+.meio p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-bottom: 4px solid black;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 1s ease;
+}
+
+.meio p:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.direita {
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    flex: 25%;
+    margin-top: 25px;
+    gap: 30px;
+}
+
+.direita p {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 7px 16px;
+    font-size: 20px;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+
+.direita .as{
+    background-color: white;
+    color: black
+}
+
+.direita .as:hover{
+    transition: 0.6s ease;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.direita p:hover {
+    transition: 0.6s ease;
+    background-color: white;
+    color: black;
+}
