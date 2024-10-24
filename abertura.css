@@ -10,14 +10,14 @@ header {
 
 
 header,
-.mãe,
+.mae,
 .logo,
 .meio,
 .direita {
     display: flex
 }
 
-.mãe {
+.mae {
     background-color: rgb(0, 0, 0);
     height: 100%;
     width: 100%;
